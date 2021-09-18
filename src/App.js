@@ -42,7 +42,7 @@ export default function App() {
       <Text style={styles.subtitulo}>Buscar Cep</Text>
 
       <View style={styles.inputEbotao}>
-        <TextInput
+        <TextInput style={styles.cep}
           value={cep}
           onChangeText={setCep}
           keyboardType="numeric"
@@ -63,14 +63,14 @@ export default function App() {
       </View>
 
       {resultCep && (
-        <View styles={styles.container}>
-          <Text>CEP: {resultCep.cep}</Text>
-          <Text>Logradouro: {resultCep.logradouro}</Text>
-          <Text>Bairro: {resultCep.bairro}</Text>
-          <Text>
-            Cidade/UF: {resultCep.localidade} / {resultCep.uf}
+        <View styles={styles.containerResultado}>
+          <Text style={styles.cep}>CEP: {resultCep.cep}</Text>
+          <Text style={styles.cep}>Logradouro: {resultCep.logradouro}</Text>
+          <Text style={styles.cep}>Bairro: {resultCep.bairro}</Text>
+          <Text style={styles.cep}>
+            Cidade/UF: {resultCep.localidade} - {resultCep.uf}
           </Text>
-          <Text>DDD: {resultCep.ddd}</Text>
+          <Text style={styles.cep}>DDD: {resultCep.ddd}</Text>
         </View>
       )}
     </View>

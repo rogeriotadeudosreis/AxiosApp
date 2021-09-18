@@ -28,10 +28,26 @@ const styles = StyleSheet.create({
   },
   botaoLimpar: {
     width: 100,
+    marginBottom: 25,
   },
   containerBotoes: {
     marginLeft: 10,
     width: 100,
+   
+  },
+  containerResultado: {
+    width: '100%',
+    backgroundColor: 'yellow',
+  },
+  cep: {
+    fontSize: 18,
+    color: '#FFF',
+    backgroundColor: '#000',
+    marginLeft: 2,
+    marginTop:5,
+    padding:5,
+    height: 40,
+    borderRadius:5,
   },
 });
 
