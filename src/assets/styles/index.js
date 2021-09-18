@@ -3,7 +3,8 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#CCC',
+    backgroundColor: '#182522',
+    // color: #804000
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -11,15 +12,26 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
   },
-  containerBotoes: {
+  inputEbotao: {
     flexDirection: 'row',
-    alignContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 20,
   },
-  buscar: {
-    width: '200px',
-  },
-  texto: {
+  titulo: {
     fontSize: 24,
+    color: '#FFF',
+  },
+  subtitulo: {
+    fontSize: 20,
+    color: '#FFF',
+    marginTop: 10,
+  },
+  botaoLimpar: {
+    width: 100,
+  },
+  containerBotoes: {
+    marginLeft: 10,
+    width: 100,
   },
 });
 

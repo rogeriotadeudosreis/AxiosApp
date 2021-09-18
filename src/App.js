@@ -38,21 +38,28 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.texto}>Buscar Cep</Text>
-      <TextInput
-        value={cep}
-        onChangeText={setCep}
-        keyboardType="numeric"
-        placeholder="Ex: 74000000"
-        ref={focusCep}
-      />
-      {/* Botões de buscar e limpar */}
-      <View style={styles.containerBotoes}>
-        <Button
-          style={styles.buscar}
-          title="Buscar"
-          onPress={handleBuscaCep}></Button>
-        <Button title="Limpar" onPress={handlelimparCampo}></Button>
+      <Text style={styles.titulo}>Aula sobre Axios</Text>
+      <Text style={styles.subtitulo}>Buscar Cep</Text>
+
+      <View style={styles.inputEbotao}>
+        <TextInput
+          value={cep}
+          onChangeText={setCep}
+          keyboardType="numeric"
+          placeholder="Ex: 74000000"
+          placeholderTextColor="#FFF"
+          ref={focusCep}
+        />
+        {/* Botões de buscar e limpar */}
+        <View style={styles.containerBotoes}>
+          <Button
+            title="Buscar"
+            onPress={handleBuscaCep}></Button>
+        </View>
+      </View>
+
+      <View style={styles.botaoLimpar}>
+        <Button title="Limpar" color='green' onPress={handlelimparCampo}></Button>
       </View>
 
       {resultCep && (
